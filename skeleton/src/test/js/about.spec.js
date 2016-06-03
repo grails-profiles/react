@@ -1,7 +1,7 @@
 import React from 'react';
 import TestUtils from 'react-addons-test-utils';
 import expect from 'expect';
-import About from '../../../main/js/app/about';
+import About from '../../main/js/app/about';
 
 
 describe('About', () => {
