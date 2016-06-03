@@ -18,13 +18,13 @@ grailsPublish {
     // TODO: Provide values here
     user = 'user'
     key = 'key'
-    githubSlug = 'foo/bar'
+    githubSlug = 'grails-profiles/react'
     license {
         name = 'Apache-2.0'
     }
-    title = "My Profile"
-    desc = "Full profile description"
-    developers = [johndoe:"John Doe"]
+    title = "React Profile"
+    desc = "A profile for creating applications with React frontends"
+    developers = [zacharyklein:"Zachary Klein"]
 }
 
 repositories {
@@ -33,5 +33,5 @@ repositories {
 }  
 
 dependencies {
-    runtime "org.grails.profiles:webpack:${project.grailsVersion}"
+    runtime "org.grails.profiles:webpack:1.0.0-SNAPSHOT"
 }

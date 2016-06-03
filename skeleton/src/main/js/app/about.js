@@ -1,6 +1,3 @@
-/**
- * Created by zak on 5/13/16.
- */
 import React from 'react';
 import Immutable from 'immutable'
 import autobind from './util/autobind'
@@ -8,7 +5,7 @@ import {Modal, Button} from 'react-bootstrap';
 
 require('./../styles/style.css');
 
-class Hello extends React.Component {
+class About extends React.Component {
 
     constructor(props) {
         super(props); // must call before "this" is accessed
@@ -59,4 +56,4 @@ class Hello extends React.Component {
     }
 }
 
-export default Hello;
+export default About;
