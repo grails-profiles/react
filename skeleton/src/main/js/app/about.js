@@ -3,8 +3,6 @@ import Immutable from 'immutable'
 import autobind from './util/autobind'
 import {Modal, Button} from 'react-bootstrap';
 
-require('./../styles/style.css');
-
 class About extends React.Component {
 
     constructor(props) {
@@ -28,7 +26,7 @@ class About extends React.Component {
         const showModal = this.state.data.get('showModal');
 
         return <div>
-            <h1>Hello from React! <img className="inline-react-logo" src={require('./../images/react.png')} /></h1>
+            <h1>Hello from React!</h1>
 
             <Button bsStyle="success" onClick={this.toggleModal}>About Us</Button>
 
@@ -38,8 +36,6 @@ class About extends React.Component {
                 </Modal.Header>
                 <Modal.Body>
                     <h4>Brought to you by React, Webpack & Grails</h4>
-
-                    <p>Using React 15.0.1, webpack 1.13.0, Grails 3.1.6</p>
                     <div className="center">
                         <span className="about-react-logo">&nbsp;</span>
                         <span className="about-webpack-logo">&nbsp;</span>
@@ -48,7 +44,7 @@ class About extends React.Component {
 
                  </Modal.Body>
                 <Modal.Footer>
-                    <span className="copyright">Built by Zachary Klein</span><Button onClick={this.toggleModal}>Close</Button>
+                    <span className="copyright">Built with React 15.0.1, webpack 1.13.0, Grails 3.1.8</span><Button onClick={this.toggleModal}>Close</Button>
                 </Modal.Footer>
             </Modal>
 
