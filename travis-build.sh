@@ -3,7 +3,7 @@ set -e
 ./gradlew clean 
 EXIT_STATUS=0
 echo "Publishing archives for branch $TRAVIS_BRANCH"
-if [[$TRAVIS_PULL_REQUEST == 'false' ]]; then
+if [[ $TRAVIS_PULL_REQUEST == 'false' ]]; then
 
   echo "Publishing archives"
 
