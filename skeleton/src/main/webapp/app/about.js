@@ -44,7 +44,7 @@ class About extends React.Component {
 
                  </Modal.Body>
                 <Modal.Footer>
-                    <span className="copyright">Built with React 15.0.1, webpack 1.13.0, Grails 3.1.8</span><Button onClick={this.toggleModal}>Close</Button>
+                    <span className="copyright">Built with React 15.3.2, webpack 1.13.1, Grails 3</span><Button onClick={this.toggleModal}>Close</Button>
                 </Modal.Footer>
             </Modal>
 
