@@ -1,4 +1,4 @@
-description: A profile for creating applications with React frontends
+description: A profile for creating Grails applications with a React frontend
 features:
     defaults:
         - hibernate

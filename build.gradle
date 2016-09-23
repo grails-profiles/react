@@ -23,7 +23,7 @@ grailsPublish {
         name = 'Apache-2.0'
     }
     title = "React Profile"
-    desc = "A profile for creating applications with React frontends"
+    desc = "A profile for creating Grails applications with React"
     developers = [zacharyklein:"Zachary Klein"]
 }
 
