@@ -2,7 +2,7 @@ var path = require('path');
 
 module.exports = {
     entry: {
-        index: './src/main/js/app/app.js'
+        index: './src/main/webapp/app/app.js'
     },
     output: {
         path: './grails-app/assets/javascripts',
