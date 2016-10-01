@@ -1,10 +1,18 @@
 description: A profile for creating Grails applications with a React frontend
+instructions: |
+    To get started with this profile,
+skeleton:
+    excludes:
+        - gradlew
+        - gradlew.bat
+        - gradle/
+    parent:
+        target: server
 features:
     defaults:
-        - hibernate
+        - hibernate5
     required:
         - json-views
-        - asset-pipeline
 build:
     repositories:
         - "https://plugins.gradle.org/m2/"
@@ -13,6 +21,4 @@ build:
         - com.moowork.node
 dependencies:
     build:
-         - "com.moowork.gradle:gradle-node-plugin:0.12"
-    compile:
-        - "org.grails:grails-plugin-gsp"
+         - "com.moowork.gradle:gradle-node-plugin:0.13"
