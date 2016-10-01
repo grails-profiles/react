@@ -1,0 +1,33 @@
+plugins {
+    id "com.moowork.node" version "0.13"
+}
+
+task start(type: NpmTask) {
+    group = 'application'
+    description = 'Run the client app'
+    args = ['start']
+}
+
+task build(type: NpmTask) {
+    group = 'build'
+    description = 'Build the client bundle'
+    args = ['build']
+}
+
+task test(type: NpmTask) {
+    group = 'verification'
+    description = 'Run the client tests'
+    args = ['test']
+}
+
+task eject(type: NpmTask) {
+    group = 'other'
+    description = 'Eject from the create-react-app scripts'
+    args = ['eject']
+}
+
+
+start.dependsOn(['npmInstall'])
+build.dependsOn(['npmInstall'])
+test.dependsOn(['npmInstall'])
+eject.dependsOn(['npmInstall'])
