@@ -27,7 +27,7 @@ task eject(type: NpmTask) {
 }
 
 
-start.dependsOn(['npmInstall'])
+bootRun.dependsOn(['npmInstall'])
 build.dependsOn(['npmInstall'])
 test.dependsOn(['npmInstall'])
 eject.dependsOn(['npmInstall'])
