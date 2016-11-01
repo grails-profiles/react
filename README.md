@@ -3,6 +3,8 @@ A profile for creating Grails applications with a React frontend
 
 [![Build Status](https://travis-ci.org/grails-profiles/react.svg?branch=master)](https://travis-ci.org/grails-profiles/react)
 
+ - If you are looking for the multi-project client/server version of this profile, please see the 2.x branch: https://github.com/grails-profiles/react/
+
 This profile is based on the approach described in this post: http://grailsblog.objectcomputing.com/posts/2016/05/28/using-react-with-grails.html  Please read this post for more information.
 
 *Please note* - the 1.x branch of the `react` profile configures webpack (https://webpack.github.io/) and Grails to serve a React frontend within a standard, monolithic Grails application. If you prefer a multi-project solution with a separate server and client app, please use the version 2.x branch of the `react` profile.
