@@ -1,0 +1,108 @@
+.container {
+  font-family: proxima-nova,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+  color: #484848;
+  line-height: 1.28;
+  font-size: 1.2em;
+}
+
+h1 {
+  font-family: proxima-nova,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+}
+
+
+.grails-icon img {
+  height: 27px;
+  background-image: url("images/grails-cupsonly-logo-white.svg");
+}
+
+a {
+  color: #db4800;
+}
+
+#controllers a {
+  text-decoration: underline;
+}
+
+#controllers a:hover {
+  text-decoration: none;
+}
+
+.grails-logo-container {
+  background:#79b94c no-repeat 50% 30%;
+  margin-bottom: 20px;
+  color: white;
+  height:300px;
+  text-align:center;
+}
+
+/*img.grails-logo {*/
+  /*height:340px;*/
+  /*margin-top:-10px;*/
+/*}*/
+
+.nav-link {
+  padding: .5rem;
+  border-radius: 3px;
+}
+
+.nav-link:hover, .nav-link:active {
+  background-color: #db4800;
+}
+
+.grails-icon img {
+  height: 27px;
+  background-image: url("images/grails-cupsonly-logo-white.svg");
+}
+
+.plus-logo {
+  font-size: 10rem;
+  position: absolute;
+  top: 150px;
+  right: 200px;
+}
+
+.hero-logo {
+  width: 201px;
+  position: absolute;
+  top: 150px;
+  right: 20px;
+}
+
+.navbar a.dropdown-toggle {
+  color:  white!important;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.85)!important;
+}
+
+.navbar .open a.dropdown-toggle {
+  color: black!important;
+  text-shadow: 0 1px 0 rgba(220, 220, 220, 0) !important;
+}
+
+.navbar .navbar-brand {
+  color:  white!important;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.85)!important;
+}
+
+@media (max-width: 1000px) {
+  .hero-logo {
+    display: none;
+  }
+
+  .plus-logo {
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: white!important;
+  }
+
+  .navbar-toggle .icon-bar {
+    background-color: white!important;
+  }
+
+
+}

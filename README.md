@@ -3,19 +3,14 @@ A profile for creating Grails applications with a React frontend
 
 [![Build Status](https://travis-ci.org/grails-profiles/react.svg?branch=master)](https://travis-ci.org/grails-profiles/react)
 
-This profile is based on the approach described in this post: http://grailsblog.objectcomputing.com/posts/2016/05/28/using-react-with-grails.html  Please read this post for more information.
+This profile provides a client/server multi-project build. The server Grails app is using the rest-api profile with CORS enabled. It can be started using 'grails run-app' or using the Gradle wrapper:
 
-*Please note* - the 1.x branch of the `react` profile configures webpack (https://webpack.github.io/) and Grails to serve a React frontend within a standard, monolithic Grails application. If you prefer a multi-project solution with a separate server and client app, please use the version 2.x branch of the `react` profile.
+      ./gradlew server:bootRun
 
-This profile is a superset of the `webpack` profile, which can be found here: https://github.com/grails-profiles/webpack
+The React client app has been built using the create-react-app CLI. It can be started via 'npm start' or using the Gradle wrapper:
 
-# Getting Started
+      ./gradlew client:start
 
-To get started with this profile, simply run the Grails application using `grails run-app` or `./gradlew bootRun`. The profile will configure the Gradle-node plugin (https://github.com/srs/gradle-node-plugin) with `npm` scripts to build the React application on build time. This way the React app will be bundled and ready to serve every time you start the app.
+The client app's build.gradle defines other tasks to test and build the app using react-scripts. Please see create-react-app's documentation for more information: https://github.com/facebookincubator/create-react-app
 
-In order to take advantage of webpack's "watch" mode to automatically reload changes, you will need to run webpack along with the Grails application. Use `npm run webpack` or use the Gradle wrapper: `./gradlew webpack`
-
-# Running Tests
-
-Mocha is configured to run tests from `src/main/js`. Run it using `npm run test` or use the Gradle wrapper: `./gradlew mochaTest`.
-
+For support, please use the Groovy Community Slack (https://groovycommunity.slack.com/) or open an issue on Github: https://github.com/grails-profiles/react/issues
