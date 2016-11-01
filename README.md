@@ -3,6 +3,8 @@ A profile for creating Grails applications with a React frontend
 
 [![Build Status](https://travis-ci.org/grails-profiles/react.svg?branch=master)](https://travis-ci.org/grails-profiles/react)
 
+ - If you are looking for the webpack/monolith version of this profile, please see the 1.x branch: https://github.com/grails-profiles/react/tree/1.x
+
 This profile provides a client/server multi-project build. The server Grails app is using the rest-api profile with CORS enabled. It can be started using 'grails run-app' or using the Gradle wrapper:
 
       ./gradlew server:bootRun
