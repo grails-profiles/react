@@ -56,12 +56,14 @@ a {
 
 .plus-logo {
   font-size: 10rem;
+  position: absolute;
   top: 150px;
   right: 200px;
 }
 
 .hero-logo {
   width: 201px;
+  position: absolute;
   top: 150px;
   right: 20px;
 }
