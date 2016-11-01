@@ -2,7 +2,7 @@ plugins {
     id "com.moowork.node" version "0.13"
 }
 
-task start(type: NpmTask) {
+task bootRun(type: NpmTask) {
     group = 'application'
     description = 'Run the client app'
     args = ['start']
