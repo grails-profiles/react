@@ -9,7 +9,7 @@ This profile provides a client/server multi-project build. The server Grails app
 
       ./gradlew server:bootRun
 
-The React client app has been built using the create-react-app CLI. It can be started via 'npm start' or using the Gradle wrapper:
+The React client app has been built using the create-react-app CLI. It can be started via `npm start` (in which case you will need to run `npm install` to install npm dependencies) or using the Gradle wrapper (which will install npm dependencies automatically if needed):
 
       ./gradlew client:start
 
