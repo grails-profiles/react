@@ -4,6 +4,7 @@
   font-size: 1.2em;
 }
 
+
 .grails-icon img {
   height: 27px;
   background-image: url("images/grails-cupsonly-logo-white.svg");
@@ -68,17 +69,17 @@ a {
 
 .navbar a.dropdown-toggle {
   color:  white!important;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.85)!important;
+  text-shadow: none;
 }
 
 .navbar .open a.dropdown-toggle {
   color: black!important;
-  text-shadow: 0 1px 0 rgba(220, 220, 220, 0) !important;
+  text-shadow: none;
 }
 
 .navbar .navbar-brand {
   color:  white!important;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.85)!important;
+  text-shadow: none;
 }
 
 @media (max-width: 1000px) {
