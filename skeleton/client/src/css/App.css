@@ -10,8 +10,34 @@
   background-image: url("images/grails-cupsonly-logo-white.svg");
 }
 
+
 a {
   color: #db4800;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #db4800;
+  text-decoration: none
+}
+
+
+#content section h1 {
+  font-size: 34px;
+  line-height: 40px;
+  font-weight: 200;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+}
+
+#content section p {
+  margin-top: 0;
+  padding-bottom: 5px;
+  text-align: center;
+  color: #222;
+  font-size: 15px;
+  line-height: 25px;
 }
 
 #controllers a {
@@ -37,6 +63,7 @@ a {
 
 .navbar {
   border: none;
+  border-radius: none;
 }
 
 .nav-link {
@@ -55,16 +82,14 @@ a {
 
 .plus-logo {
   font-size: 10rem;
-  position: absolute;
-  top: 150px;
-  right: 200px;
+  margin-left: -100px;
+  margin-right: -13px;
 }
 
 .hero-logo {
-  width: 201px;
-  position: absolute;
-  top: 150px;
-  right: 20px;
+  width: 161px;
+  margin-right: -161px;
+  margin-bottom: 88px;
 }
 
 .navbar a.dropdown-toggle {
@@ -82,7 +107,9 @@ a {
   text-shadow: none;
 }
 
-@media (max-width: 1000px) {
+
+@media (max-width: 767px) {
+
   .hero-logo {
     display: none;
   }
@@ -91,10 +118,6 @@ a {
     display: none;
   }
 
-}
-
-
-@media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: white!important;
   }

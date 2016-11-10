@@ -9,7 +9,7 @@ function AppNav({serverInfo, clientInfo}) {
   const {environment, appprofile, appversion, grailsversion, reloadingagentenabled, artefacts, plugins} = serverInfo;
 
   return(
-    <Navbar fixedTop style={{backgroundColor: '#4D8618', backgroundImage: 'none'}}>
+    <Navbar style={{backgroundColor: '#4D8618', backgroundImage: 'none', borderRadius: 0}}>
       <Navbar.Header>
         <Navbar.Brand>
           <i className="fa grails-icon">
@@ -41,8 +41,8 @@ function AppNav({serverInfo, clientInfo}) {
           <NavDropdown eventKey="4" title="Installed Plugins " id="plugins">
 
             {plugins ? plugins.map(plugin => {
-                return <MenuItem eventKey="4.1" key={plugin.name}>{plugin.name} - {plugin.version}</MenuItem>
-              }) : null
+              return <MenuItem eventKey="4.1" key={plugin.name}>{plugin.name} - {plugin.version}</MenuItem>
+            }) : null
             }
 
 
