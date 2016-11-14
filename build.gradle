@@ -10,7 +10,6 @@ buildscript {
 
 apply plugin: "org.grails.grails-profile"
 apply plugin: "org.grails.grails-profile-publish"
-git
 group 'org.grails.profiles'
 version '2.0.0'
 
