@@ -31,5 +31,5 @@ repositories {
 }  
 
 dependencies {
-    runtime "org.grails.profiles:webpack:1.0.0-RC2"
+    runtime "org.grails.profiles:webpack:1.0.0"
 }
