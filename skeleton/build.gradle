@@ -1,4 +1,0 @@
-
-task mochaTest {
-    dependsOn(['npmInstall', 'npm_run_test'])
-}
