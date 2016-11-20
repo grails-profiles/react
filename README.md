@@ -4,7 +4,7 @@ A profile for creating Grails applications with a React frontend
 [![Build Status](https://travis-ci.org/grails-profiles/react.svg?branch=master)](https://travis-ci.org/grails-profiles/react)
 
 ```
-grails create-app myApp --profile=org.grails.profiles:react:2.0.0
+grails create-app myApp --profile=org.grails.profiles:react:2.0.1
 ```
 
  - If you are looking for the webpack/monolithic version of this profile, please see the 1.x branch: https://github.com/grails-profiles/react/tree/1.x
