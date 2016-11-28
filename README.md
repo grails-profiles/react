@@ -5,7 +5,7 @@ A profile for creating Grails applications with a React frontend
 
 
 ```
-grails create-app myApp --profile=org.grails.profiles:react:1.0.1
+grails create-app myApp --profile=org.grails.profiles:react:1.0.2
 ```
 
 
