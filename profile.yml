@@ -1,7 +1,7 @@
 description: A profile for creating Grails applications with a React frontend
 features:
     defaults:
-        - hibernate
+        - hibernate5
     required:
         - json-views
         - asset-pipeline
@@ -13,6 +13,6 @@ build:
         - com.moowork.node
 dependencies:
     build:
-         - "com.moowork.gradle:gradle-node-plugin:0.12"
+         - "com.moowork.gradle:gradle-node-plugin:0.13"
     compile:
         - "org.grails:grails-plugin-gsp"
