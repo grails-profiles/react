@@ -13,6 +13,7 @@ grails create-app myApp --profile=react
 grails create-app myApp --profile=org.grails.profiles:react:1.0.2
 ```
 
+##Using the profile
 
 This profile provides a client/server multi-project build. The server Grails app is using the rest-api profile with CORS enabled. It can be started using 'grails run-app' or using the Gradle wrapper:
 
