@@ -16,17 +16,17 @@ task bootRun(type: NpmTask, dependsOn: 'npmInstall') {
 task build(type: NpmTask, dependsOn: 'npmInstall') {
     group = 'build'
     description = 'Build the client bundle'
-    args = ['build']
+    args = ['run', 'build']
 }
 
 task test(type: NpmTask, dependsOn: 'npmInstall') {
     group = 'verification'
     description = 'Run the client tests'
-    args = ['test']
+    args = ['run', 'test']
 }
 
 task eject(type: NpmTask, dependsOn: 'npmInstall') {
     group = 'other'
     description = 'Eject from the create-react-app scripts'
-    args = ['eject']
+    args = ['run', 'eject']
 }
