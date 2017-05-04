@@ -1,6 +1,6 @@
 
-/* react profile */
-
-task mochaTest {
-    dependsOn(['npmInstall', 'npm_run_test'])
+task mochaTest(type: YarnTask, dependsOn: 'yarn') {
+    group = 'verification'
+    description = 'Run the client tests'
+    args = ['run', 'test']
 }

@@ -1,4 +1,13 @@
 description: A profile for creating Grails applications with a React frontend
+instructions: |
+    Webpack is configured to bundle React components from src/main/webapp into grails-app/assets. The bundle will be generated once when the app is started. To run webpack in "watch" mode, run the following command:
+
+    gradlew webpack
+
+    Client-side tests are located in src/test/webapp, and can be run via npm, yarn, or Gradle:
+
+    gradlew mochTest
+
 features:
     defaults:
         - hibernate5
@@ -13,6 +22,6 @@ build:
         - com.moowork.node
 dependencies:
     build:
-         - "com.moowork.gradle:gradle-node-plugin:0.13"
+         - "com.moowork.gradle:gradle-node-plugin:1.1.1"
     compile:
         - "org.grails:grails-plugin-gsp"

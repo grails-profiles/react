@@ -12,7 +12,7 @@ apply plugin: "org.grails.grails-profile"
 apply plugin: "org.grails.grails-profile-publish"
 
 group 'org.grails.profiles'
-version '1.0.2'
+version '1.1.0.RC1'
 
 grailsPublish {
     userOrg = 'grails'
@@ -23,7 +23,7 @@ grailsPublish {
     title = "React Profile"
     desc = "A profile for creating Grails applications with React"
     developers = [zacharyklein:"Zachary Klein"]
-}
+}1
 
 repositories {
     mavenLocal()
@@ -31,5 +31,5 @@ repositories {
 }
 
 dependencies {
-    runtime 'org.grails.profiles:webpack:1.0.2'
+    runtime 'org.grails.profiles:webpack:1.1.1'
 }
