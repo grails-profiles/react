@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, NavDropdown, Nav, MenuItem } from 'react-bootstrap';
 
-import grailsLogo from './images/grails-cupsonly-logo-white.svg';
+import grailsLogo from './images/grails.svg';
 import 'whatwg-fetch';
 
 function AppNav({serverInfo, clientInfo}) {
@@ -9,12 +9,10 @@ function AppNav({serverInfo, clientInfo}) {
   const {environment, appprofile, appversion, grailsversion, reloadingagentenabled, artefacts, plugins} = serverInfo;
 
   return(
-    <Navbar style={{backgroundColor: '#4D8618', backgroundImage: 'none', borderRadius: 0}}>
+    <Navbar style={{backgroundColor: '#424649', backgroundImage: 'none', borderRadius: 0}}>
       <Navbar.Header>
         <Navbar.Brand>
-          <i className="fa grails-icon">
-            <img src={grailsLogo} alt="Grails" />
-          </i> Grails
+            <img src={grailsLogo} alt="Grails" width="80" height="80"/>
         </Navbar.Brand>
         <Navbar.Toggle />
       </Navbar.Header>

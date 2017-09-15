@@ -44,7 +44,7 @@ pre {
 
 }
 .navbar-default, .navbar-static-top {
-    background-color: #4D8618;
+    background-color: #424649;
     border: 0px;
 }
 a.navbar-brand {
@@ -113,7 +113,7 @@ a.navbar-brand {
 
 #band {
     /*grey =#808080*/
-    background: #79B94C  no-repeat 50% 30%;
+    background: #feb672  no-repeat 50% 30%;
     height: 400px;
 }
 
@@ -899,7 +899,7 @@ html, body, .st-container, .st-pusher, .st-content {
     visibility: hidden;
     width: 300px;
     height: 100%;
-    background: #79B94C;
+    background: #feb672;
     -webkit-transition: all .5s;
     transition: all .5s;
     right: -600px
