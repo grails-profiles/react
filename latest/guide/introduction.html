@@ -32,10 +32,16 @@ function addJsClass() {
                         <div class="toc-item" style="margin-left:0"><a href="../guide/introduction.html"><strong>1</strong><span>Introduction</span></a>
                         </div>
                         
-                        <div class="toc-item" style="margin-left:0"><a href="../guide/guides.html"><strong>2</strong><span>Guides, Quickcast and Blog Posts</span></a>
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/usage.html"><strong>2</strong><span>Usage</span></a>
                         </div>
                         
-                        <div class="toc-item" style="margin-left:0"><a href="../guide/profileinfo.html"><strong>3</strong><span>Profile Info</span></a>
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/guides.html"><strong>3</strong><span>Guides, Quickcast and Blog Posts</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/profileinfo.html"><strong>4</strong><span>Profile Info</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/support.html"><strong>5</strong><span>Support</span></a>
                         </div>
                         
                     </div>
@@ -60,7 +66,7 @@ function addJsClass() {
                 <span id='toggle-col1' class="toggle">(<a href="#" onclick="localToggle(); return false;">Quick Reference</a>)</span>
 
                 
-                    <div class="toc-item next-right"><a href="../guide/guides.html"><strong>2</strong><span>Guides, Quickcast and Blog Posts</span> >></a></div>
+                    <div class="toc-item next-right"><a href="../guide/usage.html"><strong>2</strong><span>Usage</span> >></a></div>
                 
 
 
@@ -87,43 +93,19 @@ function addJsClass() {
 <p>Grails Profiles encapsulate project commands, templates, and plugins.
 To create an application using the <code>react</code> profile you can use the next command:</p>
 </div>
-<div class="paragraph">
-<p><code>grails create-app myapp --profile=react</code></p>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">grails create-app myapp --profile=react</code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p>This profile provides a client/server multi-project build structure.
-The server Grails app is using the rest-api profile with CORS enabled.
-It can be started using <code>grails run-app</code> or using the Gradle wrapper:</p>
+<p>If you are looking for the webpack/monolithic version of this profile, please see the [1.x branch](<a href="https://github.com/grails-profiles/react/tree/1.x" class="bare">https://github.com/grails-profiles/react/tree/1.x</a>).
+You can install it with the command below:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="bash">./gradlew server:bootRun</code></pre>
+<pre class="CodeRay highlight"><code data-lang="bash">grails create-app myApp --profile=org.grails.profiles:react:1.0.2</code></pre>
 </div>
-</div>
-<div class="paragraph">
-<p>The React client app has been built using the create-react-app CLI. It can be started
-via 'npm start' (in which case you will need to run 'npm install' to install npm dependencies) or using the
-Gradle wrapper (which will install npm dependencies automatically if needed):</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="bash">./gradlew client:bootRun</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>The client app&#8217;s build.gradle defines other tasks to test and build the app using react-scripts. Please see create-react-app&#8217;s documentation for more information: <a href="https://github.com/facebookincubator/create-react-app" class="bare">https://github.com/facebookincubator/create-react-app</a></p>
-</div>
-<div class="paragraph">
-<p>To run both client &amp; server projects in parallel, use the Gradle wrapper:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="bash">./gradlew bootRun -parallel</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>For support, please use the <a href="https://groovycommunity.slack.com/">Groovy Community Slack</a> or open an issue on
-<a href="https://github.com/grails-profiles/react/issues">Github</a></p>
 </div>
 <div class="paragraph">
 <p>Also, you could create a Grails application using the <code>react</code> profile with the <a href="http://start.grails.org">Grails Application Forge</a></p>
@@ -140,7 +122,7 @@ Gradle wrapper (which will install npm dependencies automatically if needed):</p
 
                 <div style="clear:both;margin-top:15px;"></div>
                 
-                    <div class="toc-item next-right"><a href="../guide/guides.html"><strong>2</strong><span>Guides, Quickcast and Blog Posts</span> >></a></div>
+                    <div class="toc-item next-right"><a href="../guide/usage.html"><strong>2</strong><span>Usage</span> >></a></div>
                 
                 <div style="clear:both"></div>
             </div>

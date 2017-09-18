@@ -32,9 +32,13 @@
                         
                         <div class="toc-item" style="margin-left:0"><a href="#introduction"><strong>1</strong><span>Introduction</span></a></div>
                         
-                        <div class="toc-item" style="margin-left:0"><a href="#guides"><strong>2</strong><span>Guides, Quickcast and Blog Posts</span></a></div>
+                        <div class="toc-item" style="margin-left:0"><a href="#usage"><strong>2</strong><span>Usage</span></a></div>
                         
-                        <div class="toc-item" style="margin-left:0"><a href="#profileinfo"><strong>3</strong><span>Profile Info</span></a></div>
+                        <div class="toc-item" style="margin-left:0"><a href="#guides"><strong>3</strong><span>Guides, Quickcast and Blog Posts</span></a></div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="#profileinfo"><strong>4</strong><span>Profile Info</span></a></div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="#support"><strong>5</strong><span>Support</span></a></div>
                         
                     </div>
                 </div>
@@ -59,9 +63,13 @@
                     
                     <div class="toc-item" style="margin-left:0px"><a href="#introduction"><strong>1</strong><span>Introduction</span></a></div>
                     
-                    <div class="toc-item" style="margin-left:0px"><a href="#guides"><strong>2</strong><span>Guides, Quickcast and Blog Posts</span></a></div>
+                    <div class="toc-item" style="margin-left:0px"><a href="#usage"><strong>2</strong><span>Usage</span></a></div>
                     
-                    <div class="toc-item" style="margin-left:0px"><a href="#profileinfo"><strong>3</strong><span>Profile Info</span></a></div>
+                    <div class="toc-item" style="margin-left:0px"><a href="#guides"><strong>3</strong><span>Guides, Quickcast and Blog Posts</span></a></div>
+                    
+                    <div class="toc-item" style="margin-left:0px"><a href="#profileinfo"><strong>4</strong><span>Profile Info</span></a></div>
+                    
+                    <div class="toc-item" style="margin-left:0px"><a href="#support"><strong>5</strong><span>Support</span></a></div>
                     
                     <div style="clear:both" ></div>
                 </div>
@@ -81,43 +89,19 @@
 <p>Grails Profiles encapsulate project commands, templates, and plugins.
 To create an application using the <code>react</code> profile you can use the next command:</p>
 </div>
-<div class="paragraph">
-<p><code>grails create-app myapp --profile=react</code></p>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">grails create-app myapp --profile=react</code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p>This profile provides a client/server multi-project build structure.
-The server Grails app is using the rest-api profile with CORS enabled.
-It can be started using <code>grails run-app</code> or using the Gradle wrapper:</p>
+<p>If you are looking for the webpack/monolithic version of this profile, please see the [1.x branch](<a href="https://github.com/grails-profiles/react/tree/1.x" class="bare">https://github.com/grails-profiles/react/tree/1.x</a>).
+You can install it with the command below:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="bash">./gradlew server:bootRun</code></pre>
+<pre class="CodeRay highlight"><code data-lang="bash">grails create-app myApp --profile=org.grails.profiles:react:1.0.2</code></pre>
 </div>
-</div>
-<div class="paragraph">
-<p>The React client app has been built using the create-react-app CLI. It can be started
-via 'npm start' (in which case you will need to run 'npm install' to install npm dependencies) or using the
-Gradle wrapper (which will install npm dependencies automatically if needed):</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="bash">./gradlew client:bootRun</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>The client app&#8217;s build.gradle defines other tasks to test and build the app using react-scripts. Please see create-react-app&#8217;s documentation for more information: <a href="https://github.com/facebookincubator/create-react-app" class="bare">https://github.com/facebookincubator/create-react-app</a></p>
-</div>
-<div class="paragraph">
-<p>To run both client &amp; server projects in parallel, use the Gradle wrapper:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="bash">./gradlew bootRun -parallel</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>For support, please use the <a href="https://groovycommunity.slack.com/">Groovy Community Slack</a> or open an issue on
-<a href="https://github.com/grails-profiles/react/issues">Github</a></p>
 </div>
 <div class="paragraph">
 <p>Also, you could create a Grails application using the <code>react</code> profile with the <a href="http://start.grails.org">Grails Application Forge</a></p>
@@ -132,7 +116,54 @@ Gradle wrapper (which will install npm dependencies automatically if needed):</p
 </div>
 
 
-<h1 id="guides">2 Guides, Quickcast and Blog Posts</h1>
+<h1 id="usage">2 Usage</h1>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-profiles/react/edit/docs/src/main/docs/guide/usage.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="paragraph">
+<p>This profile provides a client/server multi-project build structure.
+The server Grails app is using the rest-api profile with CORS enabled.
+It can be started using <code>grails run-app</code> or using the Gradle wrapper:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">./gradlew server:bootRun</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The React client app has been built using the create-react-app CLI. It can be started
+via <code>npm start</code> (in which case you will need to run <code>npm install</code> to install npm dependencies) or using the
+Gradle wrapper (which will install npm dependencies automatically if needed):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">./gradlew client:bootRun</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The client app&#8217;s <code>build.gradle</code> defines other tasks to test and build the app using react-scripts.
+Please see <a href="https://github.com/facebookincubator/create-react-app">create-react-app&#8217;s documentation</a> for more information.</p>
+</div>
+<div class="paragraph">
+<p>To run both client &amp; server projects in parallel, use the Gradle wrapper:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">./gradlew bootRun -parallel</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Although the profile creates a multi-project build, it is possible to combine both <code>client</code> and <code>server</code> projects into a single build.
+Read the Guide <a href="http://guides.grails.org/react-combined/guide/index.html">Combining the React profile projects</a> to learn how.</p>
+</div>
+
+
+<h1 id="guides">3 Guides, Quickcast and Blog Posts</h1>
 
 <div class='contribute-btn'>
     <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-profiles/react/edit/docs/src/main/docs/guide/guides.adoc"'>
@@ -178,7 +209,7 @@ Gradle wrapper (which will install npm dependencies automatically if needed):</p
 </div>
 
 
-<h1 id="profileinfo">3 Profile Info</h1>
+<h1 id="profileinfo">4 Profile Info</h1>
 
 <div class='contribute-btn'>
     <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-profiles/react/edit/docs/src/main/docs/guide/profileinfo.adoc"'>
@@ -253,6 +284,21 @@ Provided Features:
 * neo4j - Adds GORM for Neo4j to the project
 * rx-mongodb - Adds RxGORM for MongoDB to the project</code></pre>
 </div>
+</div>
+
+
+<h1 id="support">5 Support</h1>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-profiles/react/edit/docs/src/main/docs/guide/support.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="paragraph">
+<p>For support, please use the <a href="https://groovycommunity.slack.com/">Groovy Community Slack</a> or open an issue on
+<a href="https://github.com/grails-profiles/react/issues">Github</a></p>
 </div>
 
             </div>
