@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <title>1 Introduction 1.1.1.BUILD-SNAPSHOT</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="../css/main.css" type="text/css" media="screen, print" title="Style" charset="utf-8"/>
+    <link rel="stylesheet" href="../css/pdf.css" type="text/css" media="print" title="PDF" charset="utf-8"/>
+    <script type="text/javascript">
+function addJsClass() {
+    var classes = document.body.className.split(" ");
+    classes.push("js");
+    document.body.className = classes.join(" ");
+}
+    </script>
+</head>
+
+<body class="body" onload="addJsClass();">
+<div id="navigation">
+    <div class="navTitle">
+        
+        Grails React Profile
+    </div>
+    <div class="navLinks">
+        <ul>
+            <li>
+                <div id="nav-summary" onmouseover="toggleNavSummary(false)" onmouseout="toggleNavSummary(true)">
+                    <a href="../guide/index.html" class="button">Table of contents</a>
+
+                    <div id="nav-summary-childs" style="display:none;">
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/introduction.html"><strong>1</strong><span>Introduction</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/guides.html"><strong>2</strong><span>Guides, Quickcast and Blog Posts</span></a>
+                        </div>
+                        
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/profileinfo.html"><strong>3</strong><span>Profile Info</span></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </li>
+            <li class="separator selected">
+                <a id="ref-button" onclick="localToggle(); return false;" href="#">Quick Reference</a>
+            </li>
+        </ul>
+    </div>
+
+
+</div>
+
+<table id="colset" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td id="col1">
+            <div id="main" class="corner-all">
+
+                
+
+                <span id='toggle-col1' class="toggle">(<a href="#" onclick="localToggle(); return false;">Quick Reference</a>)</span>
+
+                
+                    <div class="toc-item next-right"><a href="../guide/guides.html"><strong>2</strong><span>Guides, Quickcast and Blog Posts</span> >></a></div>
+                
+
+
+                <div class="project">
+                    <h1>1 Introduction</h1>
+
+                    <p><strong>Version:</strong> 1.1.1.BUILD-SNAPSHOT</p>
+                </div>
+
+                
+
+                
+
+<h1 id="introduction">1 Introduction</h1>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-profiles/react/edit/docs/src/main/docs/guide/introduction.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="paragraph">
+<p>Grails Profiles encapsulate project commands, templates, and plugins.
+To create an application using the <code>react</code> profile you can use the next command:</p>
+</div>
+<div class="paragraph">
+<p><code>grails create-app myapp --profile=react</code></p>
+</div>
+<div class="paragraph">
+<p>This profile provides a client/server multi-project build structure.
+The server Grails app is using the rest-api profile with CORS enabled.
+It can be started using <code>grails run-app</code> or using the Gradle wrapper:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">./gradlew server:bootRun</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The React client app has been built using the create-react-app CLI. It can be started
+via 'npm start' (in which case you will need to run 'npm install' to install npm dependencies) or using the
+Gradle wrapper (which will install npm dependencies automatically if needed):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">./gradlew client:bootRun</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The client app&#8217;s build.gradle defines other tasks to test and build the app using react-scripts. Please see create-react-app&#8217;s documentation for more information: <a href="https://github.com/facebookincubator/create-react-app" class="bare">https://github.com/facebookincubator/create-react-app</a></p>
+</div>
+<div class="paragraph">
+<p>To run both client &amp; server projects in parallel, use the Gradle wrapper:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="bash">./gradlew bootRun -parallel</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For support, please use the <a href="https://groovycommunity.slack.com/">Groovy Community Slack</a> or open an issue on
+<a href="https://github.com/grails-profiles/react/issues">Github</a></p>
+</div>
+<div class="paragraph">
+<p>Also, you could create a Grails application using the <code>react</code> profile with the <a href="http://start.grails.org">Grails Application Forge</a></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../img/start.png" alt="start">
+</div>
+</div>
+<div class="paragraph">
+<p>Grails Application Forge is a great way to discover the different provided features in the profile.</p>
+</div>
+
+
+                <div style="clear:both;margin-top:15px;"></div>
+                
+                    <div class="toc-item next-right"><a href="../guide/guides.html"><strong>2</strong><span>Guides, Quickcast and Blog Posts</span> >></a></div>
+                
+                <div style="clear:both"></div>
+            </div>
+        </td>
+        <td id="col2">
+            <div class="local clearfix">
+                <div class="local-title">
+                    <a href="../guide/index.html" target="mainFrame">Quick Reference</a>
+                    <span class="toggle">(<a href="#" onclick="localToggle(); return false;">hide</a>)</span>
+                </div>
+                <div class="menu">
+                    
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<div id="footer">
+    
+    
+</div>
+
+<script type="text/javascript" src="../js/docs.js"></script>
+
+</body>
+</html>
