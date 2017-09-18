@@ -1,0 +1,12 @@
+To learn more about the Angular profiles, check the following Grails Guides & Quickcasts:
+
+* http://guides.grails.org/using-the-react-profile/guide/index.html[Using the React Profile]
+* http://guides.grails.org/building-a-react-app/guide/index.html[Building a React App]
+* http://guides.grails.org/react-combined/guide/index.html[Combining the React profile projects]
+* http://guides.grails.org/react-spring-security/guide/index.html[Creating a React app with Spring Security]
+* http://guides.grails.org/grails-vs-nodejs/guide/index.html[Replacing a Node/Express API with Grails]
+
+The following blog posts would be useful too:
+
+* http://grailsblog.objectcomputing.com/posts/2016/11/14/introducing-the-react-profile-for-grails.html[Introducing the React Profile for Grails]
+* http://grailsblog.objectcomputing.com/posts/2016/05/28/using-react-with-grails.html[Using React with Grails]

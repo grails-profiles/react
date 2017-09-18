@@ -1,0 +1,28 @@
+buildscript {
+    repositories {
+        jcenter()
+        mavenLocal()
+        maven { url "https://repo.grails.org/grails/core" }
+    }
+    dependencies {
+        classpath "org.grails:grails-docs:$grailsDocsVersion"
+        classpath 'io.github.groovylang.groovydoc:groovydoc-gradle-plugin:1.0.1'
+    }
+}
+
+version project.projectVersion
+
+ext {
+    commonBuild = "https://raw.githubusercontent.com/grails/grails-common-build/cfd3bca16661cbb6fead6006715ea5ee26fb737a/"
+}
+
+apply from:"${commonBuild}/common-docs.gradle"
+
+repositories {
+    mavenLocal()
+    maven { url "https://repo.grails.org/grails/core" }
+}
+
+dependencies {
+    documentation "org.codehaus.groovy:groovy-groovydoc:$groovyVersion"
+}
