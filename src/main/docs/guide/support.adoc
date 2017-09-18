@@ -1,0 +1,2 @@
+For support, please use the https://groovycommunity.slack.com/[Groovy Community Slack] or open an issue on
+https://github.com/grails-profiles/react/issues[Github]
