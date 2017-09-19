@@ -1,0 +1,130 @@
+.container {
+  color: #484848;
+  line-height: 1.28;
+  font-size: 1.2em;
+}
+
+
+.grails-icon img {
+  height: 27px;
+  background-image: url("../images/grails-cupsonly-logo-white.svg");
+}
+
+
+a {
+  color: #db4800;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #db4800;
+  text-decoration: none
+}
+
+
+#content section h1 {
+  font-size: 34px;
+  line-height: 40px;
+  font-weight: 200;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+}
+
+#content section p {
+  margin-top: 0;
+  padding-bottom: 5px;
+  text-align: center;
+  color: #222;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+#controllers a {
+  text-decoration: underline;
+}
+
+#controllers a:hover {
+  text-decoration: none;
+}
+
+.grails-logo-container {
+  background:#79b94c no-repeat 50% 30%;
+  margin-bottom: 20px;
+  color: white;
+  height:300px;
+  text-align:center;
+}
+
+/*img.grails-logo {*/
+/*height:340px;*/
+/*margin-top:-10px;*/
+/*}*/
+
+.navbar {
+  border: none;
+  border-radius: none;
+}
+
+.nav-link {
+  padding: .5rem;
+  border-radius: 3px;
+}
+
+.nav-link:hover, .nav-link:active {
+  background-color: #db4800;
+}
+
+.grails-icon img {
+  height: 27px;
+  background-image: url("../images/grails-cupsonly-logo-white.svg");
+}
+
+.plus-logo {
+  font-size: 10rem;
+  margin-left: -100px;
+  margin-right: -13px;
+}
+
+.hero-logo {
+  width: 161px;
+  margin-right: -161px;
+  margin-bottom: 88px;
+}
+
+.navbar a.dropdown-toggle {
+  color:  white!important;
+  text-shadow: none;
+}
+
+.navbar .open a.dropdown-toggle {
+  color: black!important;
+  text-shadow: none;
+}
+
+.navbar .navbar-brand {
+  color:  white!important;
+  text-shadow: none;
+}
+
+
+@media (max-width: 767px) {
+
+  .hero-logo {
+    display: none;
+  }
+
+  .plus-logo {
+    display: none;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: white!important;
+  }
+
+  .navbar-toggle .icon-bar {
+    background-color: white!important;
+  }
+
+
+}

@@ -1,11 +1,9 @@
 var path = require('path');
 
 module.exports = {
-  entry: {
-    index: './src/main/webapp/app/app.js'
-  },
+  entry: './src/main/webapp/index.js',
   output: {
-    path: path.join(__dirname, 'grails-app/javascripts'),
+    path: path.join(__dirname, 'grails-app/assets/javascripts'),
     publicPath: '/assets/',
     filename: 'bundle.js'
   },
@@ -17,7 +15,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ["react", ["es2015", { "modules": false }]],
+            presets: ["react", ["es2015", {"modules": false}]],
             plugins: ["transform-class-properties"]
           }
         }
@@ -25,16 +23,17 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          {loader: 'style-loader'},
-          {loader: 'css-loader'}
+          'style-loader',
+          'css-loader'
         ]
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
         use: {
-          loader: 'url?limit=10000&prefix=assets/!img'
+          loader: 'url-loader?limit=10000&prefix=assets/!img'
         }
       }
     ]
   }
 };
+

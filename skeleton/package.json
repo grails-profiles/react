@@ -7,7 +7,7 @@
   "scripts": {
     "start": "webpack --progress --watch",
     "bundle": "webpack",
-    "test": "mocha './src/test/js/*.spec.js' --compilers js:babel-core/register"
+    "test": "mocha './src/main/webapp/*.test.js' --require babel-polyfill --compilers js:babel-register,.:mocha-image-compiler"
   },
   "license": "ISC",
   "devDependencies": {
@@ -22,17 +22,21 @@
     "img-loader": "2.0.0",
     "jsdom": "10.1.0",
     "mocha": "3.3.0",
-    "react-addons-test-utils": "15.5.1",
+    "mocha-image-compiler": "^1.0.0",
+    "react-addons-test-utils": "15.6.0",
+    "react-test-renderer": "15.6.1",
     "style-loader": "0.17.0",
     "url-loader": "0.5.8",
     "webpack": "2.4.1"
   },
   "dependencies": {
     "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-register": "^6.26.0",
     "bootstrap": "3.3.7",
-    "prop-types": "^15.5.8",
-    "react": "15.5.4",
+    "prop-types": "15.5.10",
+    "react": "15.6.1",
     "react-bootstrap": "0.31.0",
-    "react-dom": "15.5.4"
+    "react-dom": "15.6.1"
   }
 }
