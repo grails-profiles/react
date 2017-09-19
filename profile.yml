@@ -11,17 +11,20 @@ instructions: |
 features:
     defaults:
         - hibernate5
+        - events
     required:
         - json-views
+        - gsp
         - asset-pipeline
 build:
     repositories:
         - "https://plugins.gradle.org/m2/"
     plugins:
-        - org.grails.grails-gsp
+        - war
+        - org.grails.grails-web
         - com.moowork.node
+    excludes:
+        - org.grails.grails-core
 dependencies:
     build:
          - "com.moowork.gradle:gradle-node-plugin:1.1.1"
-    compile:
-        - "org.grails:grails-plugin-gsp"
