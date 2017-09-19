@@ -2,7 +2,7 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-    <title>Grails React Profile</title>
+    <title>Grails Webpack Profile</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="../css/main.css" type="text/css" media="screen, print" title="Style" charset="utf-8" />
     <link rel="stylesheet" href="../css/pdf.css" type="text/css" media="print" title="PDF" charset="utf-8" />
@@ -21,7 +21,7 @@
 <div id="navigation">
     <div class="navTitle">
         
-        Grails React Profile
+        Grails Webpack Profile
     </div>
     <div class="navLinks">
         <ul>
@@ -32,13 +32,9 @@
                         
                         <div class="toc-item" style="margin-left:0"><a href="#introduction"><strong>1</strong><span>Introduction</span></a></div>
                         
-                        <div class="toc-item" style="margin-left:0"><a href="#usage"><strong>2</strong><span>Usage</span></a></div>
+                        <div class="toc-item" style="margin-left:0"><a href="#profileinfo"><strong>2</strong><span>Profile Info</span></a></div>
                         
-                        <div class="toc-item" style="margin-left:0"><a href="#guides"><strong>3</strong><span>Guides, Quickcast and Blog Posts</span></a></div>
-                        
-                        <div class="toc-item" style="margin-left:0"><a href="#profileinfo"><strong>4</strong><span>Profile Info</span></a></div>
-                        
-                        <div class="toc-item" style="margin-left:0"><a href="#support"><strong>5</strong><span>Support</span></a></div>
+                        <div class="toc-item" style="margin-left:0"><a href="#support"><strong>3</strong><span>Support</span></a></div>
                         
                     </div>
                 </div>
@@ -51,10 +47,9 @@
             <div id="main" class="corner-all">
 
                 <div class="project">
-                    <h1>Grails React Profile</h1>
+                    <h1>Grails Webpack Profile</h1>
                     <p></p>
-                    <p>A profile for creating applications using React</p>
-                    <p><strong>Version:</strong> 1.1.1.BUILD-SNAPSHOT</p>
+                    <p>A profile for creating applications using Webpack</p>
 
                 </div>
                 
@@ -63,13 +58,9 @@
                     
                     <div class="toc-item" style="margin-left:0px"><a href="#introduction"><strong>1</strong><span>Introduction</span></a></div>
                     
-                    <div class="toc-item" style="margin-left:0px"><a href="#usage"><strong>2</strong><span>Usage</span></a></div>
+                    <div class="toc-item" style="margin-left:0px"><a href="#profileinfo"><strong>2</strong><span>Profile Info</span></a></div>
                     
-                    <div class="toc-item" style="margin-left:0px"><a href="#guides"><strong>3</strong><span>Guides, Quickcast and Blog Posts</span></a></div>
-                    
-                    <div class="toc-item" style="margin-left:0px"><a href="#profileinfo"><strong>4</strong><span>Profile Info</span></a></div>
-                    
-                    <div class="toc-item" style="margin-left:0px"><a href="#support"><strong>5</strong><span>Support</span></a></div>
+                    <div class="toc-item" style="margin-left:0px"><a href="#support"><strong>3</strong><span>Support</span></a></div>
                     
                     <div style="clear:both" ></div>
                 </div>
@@ -79,7 +70,7 @@
 <h1 id="introduction">1 Introduction</h1>
 
 <div class='contribute-btn'>
-    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-profiles/react/edit/docs/src/main/docs/guide/introduction.adoc"'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-profiles/webpack/edit/docs/src/main/docs/guide/introduction.adoc"'>
         <i class='fa fa-pencil-square-o'></i> Improve this doc
     </button>
 </div>
@@ -87,28 +78,19 @@
 
 <div class="paragraph">
 <p>Grails Profiles encapsulate project commands, templates, and plugins.
-To create an application using the <code>react</code> profile you can use the next command:</p>
+To create an application using the <code>webpack</code> profile you can use the next command:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="bash">grails create-app myapp --profile=react</code></pre>
+<pre class="CodeRay highlight"><code data-lang="bash">grails create-app myapp --profile=webpack</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>If you are looking for the webpack/monolithic version of this profile, please see the [1.x branch](<a href="https://github.com/grails-profiles/react/tree/1.x" class="bare">https://github.com/grails-profiles/react/tree/1.x</a>).
-You can install it with the command below:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="bash">grails create-app myApp --profile=org.grails.profiles:react:1.0.2</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Also, you could create a Grails application using the <code>react</code> profile with the <a href="http://start.grails.org">Grails Application Forge</a></p>
+<p>Also, you could create a Grails application using the <code>webpack</code> profile with the <a href="http://start.grails.org">Grails Application Forge</a></p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="../img/start.png" alt="start">
+<img src="../img/start.png" alt="Grails Application Forge">
 </div>
 </div>
 <div class="paragraph">
@@ -116,103 +98,10 @@ You can install it with the command below:</p>
 </div>
 
 
-<h1 id="usage">2 Usage</h1>
+<h1 id="profileinfo">2 Profile Info</h1>
 
 <div class='contribute-btn'>
-    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-profiles/react/edit/docs/src/main/docs/guide/usage.adoc"'>
-        <i class='fa fa-pencil-square-o'></i> Improve this doc
-    </button>
-</div>
-
-
-<div class="paragraph">
-<p>This profile provides a client/server multi-project build structure.
-The server Grails app is using the rest-api profile with CORS enabled.
-It can be started using <code>grails run-app</code> or using the Gradle wrapper:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="bash">./gradlew server:bootRun</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>The React client app has been built using the create-react-app CLI. It can be started
-via <code>npm start</code> (in which case you will need to run <code>npm install</code> to install npm dependencies) or using the
-Gradle wrapper (which will install npm dependencies automatically if needed):</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="bash">./gradlew client:bootRun</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>The client app&#8217;s <code>build.gradle</code> defines other tasks to test and build the app using react-scripts.
-Please see <a href="https://github.com/facebookincubator/create-react-app">create-react-app&#8217;s documentation</a> for more information.</p>
-</div>
-<div class="paragraph">
-<p>To run both client &amp; server projects in parallel, use the Gradle wrapper:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="CodeRay highlight"><code data-lang="bash">./gradlew bootRun -parallel</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Although the profile creates a multi-project build, it is possible to combine both <code>client</code> and <code>server</code> projects into a single build.
-Read the Guide <a href="http://guides.grails.org/react-combined/guide/index.html">Combining the React profile projects</a> to learn how.</p>
-</div>
-
-
-<h1 id="guides">3 Guides, Quickcast and Blog Posts</h1>
-
-<div class='contribute-btn'>
-    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-profiles/react/edit/docs/src/main/docs/guide/guides.adoc"'>
-        <i class='fa fa-pencil-square-o'></i> Improve this doc
-    </button>
-</div>
-
-
-<div class="paragraph">
-<p>To learn more about the Angular profiles, check the following Grails Guides &amp; Quickcasts:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="http://guides.grails.org/using-the-react-profile/guide/index.html">Using the React Profile</a></p>
-</li>
-<li>
-<p><a href="http://guides.grails.org/building-a-react-app/guide/index.html">Building a React App</a></p>
-</li>
-<li>
-<p><a href="http://guides.grails.org/react-combined/guide/index.html">Combining the React profile projects</a></p>
-</li>
-<li>
-<p><a href="http://guides.grails.org/react-spring-security/guide/index.html">Creating a React app with Spring Security</a></p>
-</li>
-<li>
-<p><a href="http://guides.grails.org/grails-vs-nodejs/guide/index.html">Replacing a Node/Express API with Grails</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>The following blog posts would be useful too:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="http://grailsblog.objectcomputing.com/posts/2016/11/14/introducing-the-react-profile-for-grails.html">Introducing the React Profile for Grails</a></p>
-</li>
-<li>
-<p><a href="http://grailsblog.objectcomputing.com/posts/2016/05/28/using-react-with-grails.html">Using React with Grails</a></p>
-</li>
-</ul>
-</div>
-
-
-<h1 id="profileinfo">4 Profile Info</h1>
-
-<div class='contribute-btn'>
-    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-profiles/react/edit/docs/src/main/docs/guide/profileinfo.adoc"'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-profiles/webpack/edit/docs/src/main/docs/guide/profileinfo.adoc"'>
         <i class='fa fa-pencil-square-o'></i> Improve this doc
     </button>
 </div>
@@ -220,16 +109,17 @@ Read the Guide <a href="http://guides.grails.org/react-combined/guide/index.html
 
 <div class="paragraph">
 <p>You can always get information about the provided command and available features executing
-<code>grails profile-info react</code></p>
+<code>grails profile-info webpack</code></p>
 </div>
 <div class="paragraph">
 <p>You will see an output similar to:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="bash">Profile: react
+<pre class="CodeRay highlight"><code data-lang="bash">grails profile-info webpack
+Profile: webpack
 --------------------
-A profile for creating Grails applications with a React frontend
+A profile for creating applications with node-based frontends using webpack
 
 Provided Commands:
 --------------------
@@ -271,6 +161,7 @@ Provided Commands:
 
 Provided Features:
 --------------------
+* babel - Preconfigures webpack with babel-loader and ES6 transpilation
 * security - Adds Spring Security REST to the project
 * asset-pipeline - Adds Asset Pipeline to a Grails project
 * events - Adds support for the Grails EventBus abstraction
@@ -287,10 +178,10 @@ Provided Features:
 </div>
 
 
-<h1 id="support">5 Support</h1>
+<h1 id="support">3 Support</h1>
 
 <div class='contribute-btn'>
-    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-profiles/react/edit/docs/src/main/docs/guide/support.adoc"'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-profiles/webpack/edit/docs/src/main/docs/guide/support.adoc"'>
         <i class='fa fa-pencil-square-o'></i> Improve this doc
     </button>
 </div>
@@ -298,7 +189,7 @@ Provided Features:
 
 <div class="paragraph">
 <p>For support, please use the <a href="https://groovycommunity.slack.com/">Groovy Community Slack</a> or open an issue on
-<a href="https://github.com/grails-profiles/react/issues">Github</a></p>
+<a href="https://github.com/grails-profiles/webpack/issues">Github</a></p>
 </div>
 
             </div>
