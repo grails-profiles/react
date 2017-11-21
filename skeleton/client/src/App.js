@@ -48,7 +48,7 @@ class App extends Component {
               <h1 style={{textAlign: 'center'}}>Welcome to Grails</h1>
               <br/>
               <p>
-                Congratulations, you have successfully started your first Grails + React application! While in development mode, changes will be loaded automatically when you edit your React app, without even refreshing the page.
+                Congratulations, you have successfully started your Grails & React application! While in development mode, changes will be loaded automatically when you edit your React app, without even refreshing the page.
                 Below is a list of controllers that are currently deployed in
                 this application, click on each to execute its default action:
               </p>
