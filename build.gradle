@@ -13,7 +13,7 @@ buildscript {
 version project.projectVersion
 
 ext {
-    commonBuild = "https://raw.githubusercontent.com/grails/grails-common-build/cfd3bca16661cbb6fead6006715ea5ee26fb737a/"
+    commonBuild = 'https://raw.githubusercontent.com/grails/grails-common-build/d46efe9f0b41d6d215e245451a4c9d3504c347ee'
 }
 
 apply from:"${commonBuild}/common-docs.gradle"
