@@ -1,4 +1,4 @@
-To learn more about the Angular profiles, check the following Grails Guides & Quickcasts:
+To learn more about the React profiles, check the following Grails Guides & Quickcasts:
 
 * https://www.youtube.com/watch?v=JVLn7kWkjp0[Grails Quickcast #8 - Grails React Profile]
 * http://guides.grails.org/using-the-react-profile/guide/index.html[Using the React Profile]
