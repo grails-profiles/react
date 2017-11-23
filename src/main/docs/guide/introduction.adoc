@@ -6,15 +6,6 @@ To create an application using the `react` profile you can use the next command:
 grails create-app myapp --profile=react
 ----
 
-If you are looking for the webpack/monolithic version of this profile, please see the [1.x branch](https://github.com/grails-profiles/react/tree/1.x).
-You can install it with the command below:
-
-[source, bash]
-----
-grails create-app myApp --profile=org.grails.profiles:react:1.0.2
-----
-
-
 You can also choose this project when generating your project from the
 http://start.grails.org/[Grails Application Forge], either from the web app or via the API:
 

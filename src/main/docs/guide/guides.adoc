@@ -1,5 +1,6 @@
 To learn more about the Angular profiles, check the following Grails Guides & Quickcasts:
 
+* https://www.youtube.com/watch?v=JVLn7kWkjp0[Grails Quickcast #8 - Grails React Profile]
 * http://guides.grails.org/using-the-react-profile/guide/index.html[Using the React Profile]
 * http://guides.grails.org/building-a-react-app/guide/index.html[Building a React App]
 * http://guides.grails.org/react-combined/guide/index.html[Combining the React profile projects]
