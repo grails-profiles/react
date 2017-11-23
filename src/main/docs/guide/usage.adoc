@@ -1,29 +1,26 @@
 This profile provides a client/server multi-project build structure.
-The server Grails app is using the rest-api profile with CORS enabled.
-It can be started using `grails run-app` or using the Gradle wrapper:
+The "server" is a Grails app using the rest-api profile with CORS enabled.
+It can be started using `grails run-app` (from the `server` directory) or using the Gradle wrapper:
 
 [source, bash]
 ----
 ./gradlew server:bootRun
 ----
-The React client app has been built using the create-react-app CLI. It can be started
-via `npm start` (in which case you will need to run `npm install` to install npm dependencies) or using the
-Gradle wrapper (which will install npm dependencies automatically if needed):
+The React client app has been built using the create-react-app CLI. It's configured for both `npm` and `yarn`. and can be started via `npm start` or `yarn start`) (in which case you will need to run `npm install` or `yarn` to install project dependencies) or using the Gradle wrapper (which will install npm dependencies automatically if needed):
 
 [source, bash]
 ----
-./gradlew client:bootRun
+./gradlew client:start
 ----
 
 The client app's `build.gradle` defines other tasks to test and build the app using react-scripts.
 Please see https://github.com/facebookincubator/create-react-app[create-react-app's documentation] for more information.
 
-To run both client & server projects in parallel, use the Gradle wrapper:
+The `client/build.gradle` file also provides a `bootRun` task to support running both client & server projects in parallel. To do this, use the Gradle wrapper from the root of the project, and use the `-parallel` flag:
 
 [source, bash]
 ----
 ./gradlew bootRun -parallel
 ----
 
-Although the profile creates a multi-project build, it is possible to combine both `client` and `server` projects into a single build.
-Read the Guide http://guides.grails.org/react-combined/guide/index.html[Combining the React profile projects] to learn how.
+Although the profile creates a multi-project build, it is also possible to combine both `client` and `server` projects into a single deployable artifact (WAR or JAR file). Refer to the Guide http://guides.grails.org/react-combined/guide/index.html[Combining the React profile projects] to learn how.
