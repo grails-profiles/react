@@ -14,8 +14,13 @@ You can install it with the command below:
 grails create-app myApp --profile=org.grails.profiles:react:1.0.2
 ----
 
-Also, you could create a Grails application using the `react` profile with the http://start.grails.org[Grails Application Forge]
 
-image::start.png[]
+You can also choose this project when generating your project from the
+http://start.grails.org/[Grails Application Forge], either from the web app or via the API:
+
+[source, bash]
+----
+curl -O start.grails.org/myapp.zip -d profile=react
+----
 
 Grails Application Forge is a great way to discover the different provided features in the profile.
