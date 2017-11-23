@@ -20,7 +20,7 @@ function AppNav({serverInfo, clientInfo}) {
         <Nav pullRight>
           <NavDropdown eventKey="4" title="Application Status " id="app-status">
             <MenuItem eventKey="4.1">Environment: {environment}</MenuItem>
-            <MenuItem eventKey="4.2">Grails profile: {appprofile ? appprofile.react.replace('org.grails.profiles:', '') : null}</MenuItem>
+            <MenuItem eventKey="4.2">Grails profile: {appprofile ? appprofile.replace('org.grails.profiles:', '') : null}</MenuItem>
             <MenuItem eventKey="4.2">Grails version: {grailsversion}</MenuItem>
             <MenuItem eventKey="4.3">React version: {clientInfo ? clientInfo.react.replace('^', '') : null}</MenuItem>
             <MenuItem eventKey="4.3">Server version: {appversion}</MenuItem>
