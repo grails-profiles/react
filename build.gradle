@@ -12,7 +12,7 @@ apply plugin: "org.grails.grails-profile"
 apply plugin: "org.grails.grails-profile-publish"
 
 group 'org.grails.profiles'
-version '2.1.2.BUILD-SNAPSHOT'
+version '2.1.3.BUILD-SNAPSHOT'
 
 grailsPublish {
     userOrg = 'grails'
