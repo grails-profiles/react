@@ -113,7 +113,7 @@ a.navbar-brand {
 
 #band {
     /*grey =#808080*/
-    background: #feb672  no-repeat 50% 30%;
+    background: #2559a7  no-repeat 50% 30%;
     height: 400px;
 }
 
@@ -899,7 +899,7 @@ html, body, .st-container, .st-pusher, .st-content {
     visibility: hidden;
     width: 300px;
     height: 100%;
-    background: #feb672;
+    background: #2559a7;
     -webkit-transition: all .5s;
     transition: all .5s;
     right: -600px
