@@ -1,53 +1,80 @@
 import React from 'react';
-import { Navbar, NavDropdown, Nav, MenuItem } from 'react-bootstrap';
+import {Collapse, DropdownItem, DropdownMenu, DropdownToggle, Nav, Navbar, NavbarBrand, NavbarToggler, NavLink, UncontrolledDropdown} from 'reactstrap';
 
 import grailsLogo from './images/grails.svg';
-import 'whatwg-fetch';
 
-function AppNav({serverInfo, clientInfo}) {
+const NavDropdownItem = props => {
+  return <DropdownItem tag='li'><NavLink>{props.children}</NavLink></DropdownItem>
+}
+
+const AppNav = ({serverInfo, clientInfo, collapse, toggle}) => {
 
   const {environment, appprofile, appversion, grailsversion, reloadingagentenabled, artefacts, plugins} = serverInfo;
 
-  return(
-    <Navbar style={{backgroundColor: '#424649', backgroundImage: 'none', borderRadius: 0}}>
-      <Navbar.Header>
-        <Navbar.Brand>
-            <img src={grailsLogo} alt="Grails" width="80" height="80"/>
-        </Navbar.Brand>
-        <Navbar.Toggle />
-      </Navbar.Header>
-      <Navbar.Collapse>
-        <Nav pullRight>
-          <NavDropdown eventKey="4" title="Application Status " id="app-status">
-            <MenuItem eventKey="4.1">Environment: {environment}</MenuItem>
-            <MenuItem eventKey="4.2">Grails profile: {appprofile ? appprofile.replace('org.grails.profiles:', '') : null}</MenuItem>
-            <MenuItem eventKey="4.2">Grails version: {grailsversion}</MenuItem>
-            <MenuItem eventKey="4.3">React version: {clientInfo ? clientInfo.react.replace('^', '') : null}</MenuItem>
-            <MenuItem eventKey="4.3">Server version: {appversion}</MenuItem>
-            <MenuItem eventKey="4.3">Client version: {clientInfo ? clientInfo.version : null}</MenuItem>
-            <MenuItem divider />
-            <MenuItem eventKey="4.4">Reloading active: {reloadingagentenabled ? 'true' : 'false'}</MenuItem>
-          </NavDropdown>
+  return (
+    <Navbar style={{backgroundColor: '#424649', borderRadius: 0}} dark expand='lg' className='navbar-static-top'>
 
-          <NavDropdown eventKey="4" title="Artefacts " id="artefacts">
-            <MenuItem eventKey="4.1">Controllers: {artefacts ? artefacts.controllers : 0}</MenuItem>
-            <MenuItem eventKey="4.2">Domains: {artefacts ? artefacts.domains : 0}</MenuItem>
-            <MenuItem eventKey="4.3">Services: {artefacts ? artefacts.services : 0}</MenuItem>
-          </NavDropdown>
+      <NavbarBrand>
+        <img src={grailsLogo} alt="Grails"/>
+      </NavbarBrand>
+      <NavbarToggler onClick={toggle}/>
 
-          <NavDropdown eventKey="4" title="Installed Plugins " id="plugins">
+      <Collapse isOpen={collapse} navbar>
+        <Nav className="ml-auto nav" navbar>
 
-            {plugins ? plugins.map(plugin => {
-              return <MenuItem eventKey="4.1" key={plugin.name}>{plugin.name} - {plugin.version}</MenuItem>
-            }) : null
+          <UncontrolledDropdown nav inNavbar>
+            <DropdownToggle caret nav>
+              Application Status
+            </DropdownToggle>
+            <DropdownMenu right tag='ul'>
+              <NavDropdownItem>Environment: {environment}</NavDropdownItem>
+              <NavDropdownItem>App
+                profile: {appprofile ? appprofile.replace('org.grails.profiles:', '') : null}</NavDropdownItem>
+              <NavDropdownItem>Server version: {appversion}</NavDropdownItem>
+              <NavDropdownItem>Client version: {clientInfo ? clientInfo.version : null}</NavDropdownItem>
+              <DropdownItem tag='li' divider></DropdownItem>
+              <NavDropdownItem>Grails version: {grailsversion}</NavDropdownItem>
+              <NavDropdownItem>React
+                version: {clientInfo ? clientInfo.react.replace('^', '') : null}</NavDropdownItem>
+
+              <DropdownItem tag='li' divider></DropdownItem>
+              <NavDropdownItem>Reloading active: {reloadingagentenabled ? 'true' : 'false'}</NavDropdownItem>
+            </DropdownMenu>
+          </UncontrolledDropdown>
+
+          <UncontrolledDropdown nav inNavbar>
+            <DropdownToggle caret nav>
+              Artefacts
+            </DropdownToggle>
+            <DropdownMenu right tag='ul'>
+              <NavDropdownItem>Controllers: {artefacts ? artefacts.controllers : 0}</NavDropdownItem>
+              <NavDropdownItem>Domains: {artefacts ? artefacts.domains : 0}</NavDropdownItem>
+              <NavDropdownItem>Services: {artefacts ? artefacts.services : 0}</NavDropdownItem>
+            </DropdownMenu>
+          </UncontrolledDropdown>
+
+
+          <UncontrolledDropdown nav inNavbar>
+            <DropdownToggle caret nav>
+              Installed Plugins
+            </DropdownToggle>
+
+            {plugins ?
+              <DropdownMenu right tag='ul'>
+                {plugins.map(plugin => {
+                  return <NavDropdownItem
+                    key={plugin.name}>{plugin.name} - {plugin.version}</NavDropdownItem>
+                })
+                }
+              </DropdownMenu> : null
             }
 
-
-          </NavDropdown>
+          </UncontrolledDropdown>
         </Nav>
-      </Navbar.Collapse>
-    </Navbar>);
+      </Collapse>
+    </Navbar>
+  );
 
-}
+};
 
 export default AppNav;

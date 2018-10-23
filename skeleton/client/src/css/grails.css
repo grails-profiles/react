@@ -29,12 +29,12 @@ pre {
 /* customizing bootstrap nav bar */
 .navbar {
     margin-bottom: 0px;
-    padding-right: 110px;
+    padding-right: 110px!important;
 }
 .navbar .container {
     margin: 10px;
 }
-.navbar-default a {
+.navbar-dark a {
     color: #ffffff !important;
     font-size: 18px !important;
     text-decoration: none;
@@ -43,7 +43,7 @@ pre {
     width: 40px;
 
 }
-.navbar-default, .navbar-static-top {
+.navbar-dark, .navbar-static-top {
     background-color: #424649;
     border: 0px;
 }
@@ -51,7 +51,7 @@ a.navbar-brand {
     color: white !important;
     font-size: 19px !important;
 }
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+.navbar-dark .navbar-nav>.active>a, .navbar-dark .navbar-nav>.active>a:hover, .navbar-dark .navbar-nav>.active>a:focus {
     background-color: transparent;
     color: white;
 }
@@ -59,17 +59,36 @@ a.navbar-brand {
     color: white !important;
 }
 .navbar-nav>li>a:hover {
-    background-color: #db4800 !important;
+    background-color: #2559a7 !important;
     color: white !important;
 }
 .navbar-nav>li>a {
     color: #c0d3db;
+    line-height: 25px;
 }
-.navbar-default .navbar-toggle .icon-bar {
+.navbar-dark .navbar-toggler .icon-bar {
     background-color: white;
 }
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #db4800;
+.navbar-dark .navbar-toggle:hover, .navbar-dark .navbar-toggle:focus {
+    background-color: #2559a7;
+}
+
+.navbar-toggler {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.nav .dropdown a.dropdown-toggle {
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 @media (min-width: 768px) {
@@ -235,15 +254,15 @@ a.navbar-brand {
 
 @media (max-width: 1010px) {
     .event-logo {
-        height: 90px;
+        height: 100px;
     }
-
 }
 
 @media (max-width: 690px) {
     .event-logo {
         height: 60px;
-    }}
+    }
+}
 
 @media (max-width: 475px) {
     .event-logo {
@@ -381,12 +400,12 @@ body, html {
 }
 
 a {
-    color: #db4800;
+    color: #2559a7;
     text-decoration: underline;
 }
 
 a:hover {
-    color: #db4800;
+    color: #2559a7;
     text-decoration: none
 }
 
@@ -413,13 +432,13 @@ h4 {
 h5 {
     font-size: 1.125em;
     font-weight: bold;
-    color: #db4800;
+    color: #2559a7;
 }
 
 h6 {
     font-size: 1.08em;
     font-weight: normal;
-    color: #db4800;
+    color: #2559a7;
 }
 
 h7 {
@@ -559,7 +578,8 @@ h8 {
     font-weight: 200;
     text-align: center;
     margin: 0;
-    padding: 20px 0
+    padding: 20px 0;
+    width: 100%;
 }
 
 #content hr.row, #content hr.divider {
@@ -627,7 +647,6 @@ h8 {
     display: block;
     width: 80px;
     height: 80px;
-    /*background-image: url("images/icons-colset-2-its.png");*/
     float: left;
     margin-top: 12px;
     margin-right: 15px
@@ -753,14 +772,14 @@ h8 {
 
 #content.page-1 .row article h1 {
     margin: 0;
-    paddnig: 0;
+    padding: 0;
     text-align: left;
     font-size: 26px
 }
 
 #content.page-1 .row article h2 {
     margin: 0;
-    paddnig: 0
+    padding: 0
 }
 
 #content.page-1 .row article h3 {
