@@ -14,7 +14,7 @@ html {
     background-color: #ddd;
     background-image: -moz-linear-gradient(center top, #aaa, #ddd);
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #aaa), color-stop(1, #ddd));
-    background-image: linear-gradient(top, #aaa, #ddd);
+    background-image: linear-gradient(to bottom, #aaa, #ddd);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorStr = '#aaaaaa', EndColorStr = '#dddddd');
     background-repeat: no-repeat;
     height: 100%;
@@ -83,13 +83,27 @@ img {
     border: none;
 }
 
+.footer img {
+    height: 80px;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    clear: bottom;
+}
+
+.footer strong a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
 .footer {
     background: #424649;
     color: #ffffff;
     clear: both;
-    font-size: 0.8em;
+    font-size: 1em;
     margin-top: 1.5em;
     padding: 1em;
+    padding-bottom: 2em;
     min-height: 1em;
 }
 
@@ -98,7 +112,7 @@ img {
 }
 
 .spinner {
-    background: url("../images/spinner.gif") 50% 50% no-repeat transparent;
+    background: url(../images/spinner.gif) 50% 50% no-repeat transparent;
     height: 16px;
     width: 16px;
     padding: 0.5em;
@@ -168,15 +182,15 @@ img {
 }
 
 .nav a.home {
-    background-image: url("../images/skin/house.png");
+    background-image: url(../images/skin/house.png);
 }
 
 .nav a.list {
-    background-image: url("../images/skin/database_table.png");
+    background-image: url(../images/skin/database_table.png);
 }
 
 .nav a.create {
-    background-image: url("../images/skin/database_add.png");
+    background-image: url(../images/skin/database_add.png);
 }
 
 .nav li.dropdown.show ul.dropdown-menu {
@@ -335,12 +349,12 @@ fieldset.embedded legend {
 
 .errors li {
     list-style: none;
-    background: transparent url("../images/skin/exclamation.png") 0.5em 50% no-repeat;
+    background: transparent url(../images/skin/exclamation.png) 0.5em 50% no-repeat;
     text-indent: 2.2em;
 }
 
 .message {
-    background: transparent url("../images/skin/information.png") 0.5em 50% no-repeat;
+    background: transparent url(../images/skin/information.png) 0.5em 50% no-repeat;
     text-indent: 2.2em;
 }
 
@@ -436,11 +450,11 @@ th.sortable a {
 }
 
 th.asc a {
-    background-image: url("../images/skin/sorted_asc.gif");
+    background-image: url(../images/skin/sorted_asc.gif);
 }
 
 th.desc a {
-    background-image: url("../images/skin/sorted_desc.gif");
+    background-image: url(../images/skin/sorted_desc.gif);
 }
 
 .odd {
@@ -550,15 +564,15 @@ th:hover, tr:hover {
 }
 
 .buttons .delete {
-    background-image: url("../images/skin/database_delete.png");
+    background-image: url(../images/skin/database_delete.png);
 }
 
 .buttons .edit {
-    background-image: url("../images/skin/database_edit.png");
+    background-image: url(../images/skin/database_edit.png);
 }
 
 .buttons .save {
-    background-image: url("../images/skin/database_save.png");
+    background-image: url(../images/skin/database_save.png);
 }
 
 a.skip {

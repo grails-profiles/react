@@ -29,7 +29,7 @@ pre {
 /* customizing bootstrap nav bar */
 .navbar {
     margin-bottom: 0px;
-    padding-right: 110px!important;
+    padding-right: 110px;
 }
 .navbar .container {
     margin: 10px;
@@ -64,7 +64,6 @@ a.navbar-brand {
 }
 .navbar-nav>li>a {
     color: #c0d3db;
-    line-height: 25px;
 }
 .navbar-dark .navbar-toggler .icon-bar {
     background-color: white;

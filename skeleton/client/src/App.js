@@ -6,6 +6,7 @@ import grailsLogo from './images/grails-cupsonly-logo-white.svg';
 import reactLogo from './images/logo.svg';
 import {CLIENT_VERSION, REACT_VERSION, SERVER_URL} from './config';
 import 'whatwg-fetch';
+import Footer from "./Footer";
 
 class App extends Component {
 
@@ -73,7 +74,7 @@ class App extends Component {
         </div>
 
       </Row>,
-      <Row className="footer" key={3}></Row>
+      <Footer key={3}/>
     ];
   }
 }
