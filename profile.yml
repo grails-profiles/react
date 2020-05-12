@@ -34,6 +34,6 @@ build:
     excludes:
         - org.grails.grails-core
 dependencies:
-    build:
-         - "com.github.node-gradle:gradle-node-plugin:1.3.0"
+    - scope: build
+      coords: "com.github.node-gradle:gradle-node-plugin:1.3.0"
 
