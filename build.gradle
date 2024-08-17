@@ -5,11 +5,13 @@ buildscript {
     }
     dependencies {
         classpath "org.grails:grails-gradle-plugin:$grailsGradlePluginVersion"
+        classpath 'io.spring.gradle:dependency-management-plugin'
     }
 }
 
 apply plugin: "org.grails.grails-profile"
 apply plugin: "org.grails.internal.grails-profile-publish"
+apply plugin: "io.spring.dependency-management"
 
 group 'org.grails.profiles'
 version project.projectVersion
@@ -29,6 +31,6 @@ repositories {
 }
 
 dependencies {
-    runtime "org.grails.profiles:rest-api:$restApiProfileVersion"
+    profileRuntimeOnly "org.grails.profiles:rest-api:$restApiProfileVersion"
 }
 
