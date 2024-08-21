@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        java: ['11']
+        java: ['17']
     env:
       WORKSPACE: ${{ github.workspace }}
       GRADLE_OPTS: -Xmx1500m -Dfile.encoding=UTF-8
@@ -30,10 +30,10 @@ jobs:
         with:
           java-version: ${{ matrix.java }}
       - name: Run Assemble
-        if: success() && github.event_name == 'push' && matrix.java == '11'
+        if: success() && github.event_name == 'push' && matrix.java == '17'
         run: ./gradlew assemble
       - name: Publish to repo.grails.org
-        if: success() && github.event_name == 'push' && matrix.java == '11'
+        if: success() && github.event_name == 'push' && matrix.java == '17'
         env:
           ARTIFACTORY_USERNAME: ${{ secrets.ARTIFACTORY_USERNAME }}
           ARTIFACTORY_PASSWORD: ${{ secrets.ARTIFACTORY_PASSWORD }}
