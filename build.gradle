@@ -1,7 +1,9 @@
 buildscript {
     repositories {
-        mavenLocal()
+        gradlePluginPortal()
+        mavenCentral()
         maven { url "https://repo.grails.org/grails/core" }
+        // mavenLocal()  // for local testing, do not commit uncommented
     }
     dependencies {
         classpath "org.grails:grails-gradle-plugin:$grailsGradlePluginVersion"
@@ -26,12 +28,11 @@ grailsPublish {
 }
 
 repositories {
-    mavenLocal()
     mavenCentral()
     maven { url "https://repo.grails.org/grails/core" }
+    // mavenLocal()  // for local testing, do not commit uncommented
 }
 
 dependencies {
     profileRuntimeOnly "org.grails.profiles:rest-api:$restApiProfileVersion"
 }
-
